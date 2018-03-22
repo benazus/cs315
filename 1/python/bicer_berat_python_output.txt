@@ -1,0 +1,13 @@
+In main-1, a = 0 & b = 0 & c = 0
+
+In function1, a = 123 & b = 456 & c = 789
+
+In function2-1, a = 0 & b = 456 & c = 6776
+
+In function3, a = 9449 & b = 0 & c = 6776
+
+In function2-2, a = 0 & b = 456 & c = 6776
+
+In function1-2, a = 123 & b = 456 & c = 789
+
+In main-2, a = 0 & b = 0 & c = 0

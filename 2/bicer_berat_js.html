@@ -1,0 +1,139 @@
+<!-- HTML file displaying different subprogram issues in Javascript -->
+<!-- Created for Bilkent University Fall 2017 CS315 Homework 2 -->
+<!-- Berat Biçer, 21503050, Section 3 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sample Webpage for Displaying Different Scoping Rules in Javascript</title>
+	</head>
+
+	<body>
+		<center>
+			<h1>Sample Webpage for Displaying Different Scoping Rules in Javascript</h1>
+		</center>
+		
+		<pre id="para"></pre>
+	</body>
+	
+			
+		<script>
+var pContent = ""; // String content 
+	
+// Parameter Correspondance in JS
+pContent += "----- Parameter Correspondance -----\n";
+
+var a = 10,
+	b = "Berat",
+	c = "123" + 4,
+	d = "812" - 57,
+	e = "Bicer";
+
+correspondance(a, b, c, d, e);
+correspondance(b, c, d, e, a);
+correspondance(c, d, e, a, b);
+correspondance(d, e, a, b, c);
+correspondance(e, a, b, c, d);
+
+function correspondance(a, b, c, d, e){
+	pContent += "correspondance: a = " + a + "\n";
+	pContent += "correspondance: b = " + b + "\n";
+	pContent += "correspondance: c = " + c + "\n";
+	pContent += "correspondance: d = " + d + "\n";
+	pContent += "correspondance: e = " + e + "\n";
+	pContent += "\n";
+}
+
+pContent += "\n";
+
+// Formal Parameter Default Values
+pContent += "----- Formal Parameter Default Values -----\n";
+
+function defaults(a = 10, b = "Berat", c = "123" + 4, d = "812" - 57, e = "Bicer") {
+	pContent += "defaults: a = " + a + "\n";
+	pContent += "defaults: b = " + b + "\n";
+	pContent += "defaults: c = " + c + "\n";
+	pContent += "defaults: d = " + d + "\n";
+	pContent += "defaults: e = " + e + "\n";
+	pContent += "\n";
+}
+
+a = "18983", b = "masjdm", c = "bekjhr" + "hjakld", d = '7123' + 894, e = "kdmahs";
+
+defaults(a, b, c, d, e);
+defaults(a, b, c, d);
+defaults(a, b, c);
+defaults(a, b);
+defaults(a);
+defaults();
+
+pContent += "\n";
+
+// Variable Number of Actual Parameters
+pContent += "----- Variable Number of Actual Parameters -----\n";
+
+a = 237, b = [12,2545,53002,66454], c = 173*8975 - 8023/32 + 8292, d = "berat", e = false;
+
+function vParameter(a){
+    for (i = 0; i < arguments.length; i++) {
+        if (["number", "string", "boolean", "object"].includes(typeof arguments[i]))
+            pContent += "arguments[i]: " + typeof arguments[i] + "; value: " + arguments[i] + "\n";
+    }
+        
+    pContent += "\n";
+}
+
+vParameter(a);
+vParameter(a, b);
+vParameter(a, b, c);
+vParameter(a, b, c, d);
+vParameter(a, b, c, d, e);
+
+pContent += "\n";
+
+// Parameter Passing Methods
+pContent += "----- Parameter Passing Methods -----\n";
+
+a = {foo: "Tnjd", goo: "AbGwesad"}, 
+b = {foo: "e5g32f", goo: 456}, 
+c = {foo: "9FNjW", goo: false},
+d = {foo: 21503050, goo: 05030512}, 
+e = {foo: "78d=msnf1JP1", goo: "751djbn89MsthQlfHF"},
+
+paraPass(a, b, c, d, e); // Due to hoisting, this is placed before the declaration
+
+function paraPass(a, b, c, d, e) {
+	a.foo = "bicerberat";
+	b.foo = 123456;
+	c.goo = 987654;
+	d = {foo: 564, goo: 1562};
+	e = {foo: "yjQknIkne3", goo: "KMnmsdOPIms-nb29"};
+	
+	pContent += "paraPass: a.foo = " + a.foo + "\n";
+	pContent += "paraPass: a.goo = " + a.goo + "\n";
+	pContent += "paraPass: b.foo = " + b.foo + "\n";
+	pContent += "paraPass: b.goo = " + b.goo + "\n";
+	pContent += "paraPass: c.foo = " + c.foo + "\n";
+	pContent += "paraPass: c.goo = " + c.goo + "\n";
+	pContent += "paraPass: d.foo = " + d.foo + "\n";
+	pContent += "paraPass: d.goo = " + d.goo + "\n";
+	pContent += "paraPass: e.foo = " + e.foo + "\n";
+	pContent += "paraPass: e.goo = " + e.goo + "\n";
+	pContent += "\n";
+}
+
+pContent += "main of paraPass: a.foo = " + a.foo + "\n";
+pContent += "main of paraPass: a.goo = " + a.goo + "\n";
+pContent += "main of paraPass: b.foo = " + b.foo + "\n";
+pContent += "main of paraPass: b.goo = " + b.goo + "\n";
+pContent += "main of paraPass: c.foo = " + c.foo + "\n";
+pContent += "main of paraPass: c.goo = " + c.goo + "\n";
+pContent += "main of paraPass: d.foo = " + d.foo + "\n";
+pContent += "main of paraPass: d.goo = " + d.goo + "\n";
+pContent += "main of paraPass: e.foo = " + e.foo + "\n";
+pContent += "main of paraPass: e.goo = " + e.goo + "\n";
+pContent += "\n";
+
+document.getElementById("para").innerHTML = pContent;
+		</script>
+</html>

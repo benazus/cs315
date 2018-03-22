@@ -1,0 +1,46 @@
+paraCorrDef: a = 17, b = 5, c = 5:}
+paraCorrDef: a = 9, b = yH53-b, c = 88
+paraCorrDef: a = 7-4Bjs7, b = 46, c = 67
+paraCorrDef: a = berat, b = bicer, c = 67
+paraCorrDef: a = iHyhN7/6%, b = 5282, c = 97
+paraCorrDef: a = 3314, b = 6465, c = 67
+
+
+varArgs: var 0  =  1
+varArgs: var 1  =  2
+varArgs: var 2  =  3
+varArgs: var 3  =  4
+varArgs: var 4  =  5
+varArgs: var 5  =  6
+varArgs: var 0  =  1
+varArgs: var 1  =  2
+varArgs: var 2  =  3
+
+
+varArgsDict:  a  =  1
+varArgsDict:  b  =  2
+varArgsDict:  a  =  1
+varArgsDict:  c  =  3
+varArgsDict:  b  =  2
+varArgsDict:  a  =  1
+varArgsDict:  c  =  3
+varArgsDict:  b  =  2
+varArgsDict:  a  =  1
+varArgsDict:  d  =  4
+
+
+main of passMutable before: var =  ['126', '26$2', '2$2$2772']
+passMutable: x =  ['126', '26$2', '2$2$2772', 5, 7, 87]
+main of passMutable after: var =  ['126', '26$2', '2$2$2772', 5, 7, 87]
+
+
+main of passChangeMutableRef before: var =  ['126', '26$2', '2$2$2772']
+passChangeMutableRef: x =  ['berat', 'bicer', 21503050, 'sec3']
+main of passChangeMutableRef after: var =  ['126', '26$2', '2$2$2772']
+
+
+main of passImmutableRef before: var =  beratbicer
+passImmutableRef: x = :  ('beratbicer', ':)$83883 syje euejke 17728')
+main of passImmutableRef after: var =  beratbicer
+
+

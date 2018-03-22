@@ -1,0 +1,8 @@
+f1(): a = 0, b = 1, c = 2
+f2(): a = ebucabbarHüsamettin, b = 1, c = 2
+f31(): a = 0, b = 22, c = 2
+f32(): a = 23.24, b = 22, c = 56.87
+anonymous in f33-1(): a = berat, b = undefined, c = 2
+anonymous in f33-2(): a = berat, b = 23, c = 2
+f33(): a = berat, b = 5, c = 2
+main: a = 0, b = 1, c = 2

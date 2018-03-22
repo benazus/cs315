@@ -1,0 +1,16 @@
+<!-- HTML file that displaying subprogram properties in PHP -->
+<!-- Created for Bilkent University Fall 2017 CS315 Homework 2 -->
+<!-- Berat Biçer, 21503050, Section 3 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sample Webpage for Displaying Different Scoping Rules in PHP</title>
+	</head>
+
+	<body>
+		<center>
+			<h1>Sample Webpage for Displaying Different Scoping Rules in PHP</h1>
+		</center>
+paraCorr: $a = 679, $b = bErAt, $c = 278kjndDSGUJmsdbkq-dsajb28kj, $d = 1072, $e = 673.52<br/>paraCorr: $a = bErAt, $b = 278kjndDSGUJmsdbkq-dsajb28kj, $c = 1072, $d = 673.52, $e = 679<br/>paraCorr: $a = 278kjndDSGUJmsdbkq-dsajb28kj, $b = 1072, $c = 673.52, $d = 679, $e = bErAt<br/>paraCorr: $a = 1072, $b = 673.52, $c = 679, $d = bErAt, $e = 278kjndDSGUJmsdbkq-dsajb28kj<br/>paraCorr: $a = 673.52, $b = 679, $c = bErAt, $d = 278kjndDSGUJmsdbkq-dsajb28kj, $e = 1072<br/><br/><br/>defPara: $a = berat, $b = bicer, $c = 21503050, $d = section3, $e = cs315<br/>defPara: $a = 679, $b = bicer, $c = 21503050, $d = section3, $e = cs315<br/>defPara: $a = 679, $b = bErAt, $c = 21503050, $d = section3, $e = cs315<br/>defPara: $a = 679, $b = bErAt, $c = 278kjndDSGUJmsdbkq-dsajb28kj, $d = section3, $e = cs315<br/>defPara: $a = 679, $b = bErAt, $c = 278kjndDSGUJmsdbkq-dsajb28kj, $d = 1072, $e = cs315<br/>defPara: $a = 679, $b = bErAt, $c = 278kjndDSGUJmsdbkq-dsajb28kj, $d = 1072, $e = 673.52<br/><br/><br/>varArgArray: $var0 = 679<br/><br/>varArgArray: $var0 = 679<br/>varArgArray: $var1 = bErAt<br/><br/>varArgArray: $var0 = 679<br/>varArgArray: $var1 = bErAt<br/>varArgArray: $var2 = 278kjndDSGUJmsdbkq-dsajb28kj<br/><br/>varArgArray: $var0 = 679<br/>varArgArray: $var1 = bErAt<br/>varArgArray: $var2 = 278kjndDSGUJmsdbkq-dsajb28kj<br/>varArgArray: $var3 = 1072<br/><br/>varArgArray: $var0 = 679<br/>varArgArray: $var1 = bErAt<br/>varArgArray: $var2 = 278kjndDSGUJmsdbkq-dsajb28kj<br/>varArgArray: $var3 = 1072<br/>varArgArray: $var4 = 673.52<br/><br/><br/>varArgWithBuiltIn: $var0 = 679<br/><br/>varArgWithBuiltIn: $var0 = 679<br/>varArgWithBuiltIn: $var1 = bErAt<br/><br/>varArgWithBuiltIn: $var0 = 679<br/>varArgWithBuiltIn: $var1 = bErAt<br/>varArgWithBuiltIn: $var2 = 278kjndDSGUJmsdbkq-dsajb28kj<br/><br/>varArgWithBuiltIn: $var0 = 679<br/>varArgWithBuiltIn: $var1 = bErAt<br/>varArgWithBuiltIn: $var2 = 278kjndDSGUJmsdbkq-dsajb28kj<br/>varArgWithBuiltIn: $var3 = 1072<br/><br/>varArgWithBuiltIn: $var0 = 679<br/>varArgWithBuiltIn: $var1 = bErAt<br/>varArgWithBuiltIn: $var2 = 278kjndDSGUJmsdbkq-dsajb28kj<br/>varArgWithBuiltIn: $var3 = 1072<br/>varArgWithBuiltIn: $var4 = 673.52<br/><br/><br/>main of paraPassDefault before: $var1 = 3663bdPl<br/>paraPassDefault: $a = 123<br/>main of paraPassDefault after: $var1 = 3663bdPl<br/><br/>main of paraPassReference before: $var2 = 67hahUk<br/>paraPassReference: $a = 456<br/>main of paraPassReference after: $var2 = 456<br/><br/>main of paraPassDeref before: $var3->foo = yI5/5kjdU7; $var3->goo = 428<br/>paraPassDeref: printData: foo = berat; goo = bicer<br/>main of paraPassDeref after: $var3->foo = berat; $var3->goo = bicer<br/><br/>main of paraPassNewObj before: $var4->foo = Dsa47j-is5M; $var4->goo = 9371<br/>paraPassNewObj: printData: foo = berat; goo = bicer<br/>main of paraPassNewObj after: $var4->foo = Dsa47j-is5M; $var4->goo = 9371<br/><br/>	</body>
+</html>

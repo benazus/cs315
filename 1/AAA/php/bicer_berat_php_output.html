@@ -1,0 +1,30 @@
+<!-- HTML file that displays different scopings in PHP -->
+<!-- Created for Bilkent University Fall 2017 CS315 Homework 1 -->
+<!-- Berat Biçer, 21503050, Section 3 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sample Webpage for Displaying Different Scoping Rules in PHP</title>
+	</head>
+
+	<body>
+		<center>
+			<h1>Sample Webpage for Displaying Different Scoping Rules in PHP</h1>
+		</center>
+
+		<pre>
+In f1: $a = 10, $b = 1 & $c = 2
+In f11: $a = 10, $b = 1 & $c = 2
+In anonymous-1 of f111: $a = 0, $b = 1 & $c = 111
+In anonymous-1 of f111: $a = 0, $b = 1 & $c = 111
+In anonymous-2 of f111: $a = 111 $b = 1 & $c = 676
+In anonymous-1 of f111: $a = 0, $b = 1 & $c = 111
+In anonymous-2 of f111: $a = 111 $b = 1 & $c = 676
+In anonymous-3 of f111: $a = 0, $b = 676 & $c = 45
+In f111: $a = 111 $b = 676 & $c = 45
+In f2-2: $a = 9174, $b = 1 & $c = 2
+In main: $a = 0, $b = 1 & $c = 2
+		</pre>
+	</body>
+</html>
